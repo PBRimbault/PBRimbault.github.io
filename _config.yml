@@ -13,15 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+locale : "en-GB"
 title: engineer who codes
 email: patrick.rimbault@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Personal site for a structural engineer who codes
+url : "https://pbrimbault.github.io"
 twitter_username: username
 github_username: PBRimbault
-minimal_mistakes_skin: default
+minimal_mistakes_skin: air
 search: true
 
 # Build settings
@@ -56,15 +56,28 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  
+# Analytics
+analytics:
+  provider               : "google" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-109264622-1"
 
 author:
   name   : "Patrick Rimbault"
   avatar : "assets/PBR monochrome.jpg"
   bio    : "Structural engineer who likes to code."
+  location  : "Cape Town, RSA"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "http://www.thebuildingworkshop.co.za/"
+    - label:  "Email"
+      icon:   "fas fa-fw fa-envelope-square"
+      url:    mailto:patrick.rimbault@gmail.com     
+    - label: "LinkedIn"
+      icon: "fas fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/patrick-rimbault/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/PBRimbault"
